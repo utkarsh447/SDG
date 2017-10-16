@@ -13,7 +13,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,7 +30,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
     <style type="text/css">
 
         .logo{
@@ -84,19 +82,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="about.php">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="action.html">Action</a>
+                        <a class="page-scroll" href="action.php">Action</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="campaign.html">Campaign</a>
+                        <a class="page-scroll" href="campaign.php">Campaign</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="getinvolved.html">Get Involved</a>
+                        <a class="page-scroll" href="getinvolved.php">Get Involved</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">The SDG Times</a>
+                        <a class="page-scroll" href="sdgtimes.php">The SDG Times</a>
                     </li>
                     <li>
                      <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;text-decoration: none;">Support Us</a></button>
@@ -108,35 +106,66 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-        
-    <!--Team Section-->
-  <section id="team">
+  
+    <section id="whatwedo">
         <div class="container">
             <div class="row">
-                <!--div class="col-lg-12 text-left"-->
-                <div class="col-sm-4">
-                 <ul style="list-style: none">
-                    <h2 class="section-heading">Our Team</h2>
-                   
-                    <li style="font-size: 25px"><a href="advisor.php">Advisors</a></li>
-                    <li style="font-size: 25px"><a href="mentor.php">Mentors</a></li>
-                    <li style="font-size: 25px"><a href="ourteam.php">Executive</a></li>
-                    <li style="font-size: 25px"><a href="interns.php">Interns</a></li>
-                    <li style="font-size: 25px"><a href="volunteers.php">Campaigners</a></li>
-                    <li style="font-size: 25px"><a href="carrer.php">Career Progression Cycle</a></li>
+                 <div class="col-lg-12">
+                 <div class="text-right">
                     
-                    </ul>
+                    <A HREF="sdg_panel_fin/admin_login.php" >
+                        WHY NO U WORKING????
+                        ADMIN PANEL
+                    </A>
+                    
                 </div>
-                <div class="col-sm-8">
-                    <h1 style="color: #C70039"><center>Coming Soon</center></h1>
-                </div>
+
+                 <br><br><br><br><br><br><br>
+                    
+                    <div class="col-lg-12 text-left">
+                <?php 
+                    $sql = "SELECT * from blog ORDER BY id desc";            
+
+                    $result=display($sql);
+
+
+                    if($result->num_rows > 0)
+                    {
+                        while($row = $result->fetch_assoc())
+                        {
+                            $author_arr = array('sdg_panel_fin',$row["author_folder"]);
+                            $author_new_folder = implode('/', $author_arr);
+                            $image_arr = array('sdg_panel_fin',$row["image_folder"]);
+                            $image_new_folder = implode('/', $image_arr);
+                            ?>
+                            <p style="color: BLACK" id = "id" value = "id1">Title:
+                            <?php echo $row["title"] ?></p>
+<!--                             <?php echo $row["id"] ?> -->
+                            <p style="color: BLACK">Name:
+                            <?php echo $row["name"] ?></p>
+                            <p style="color: BLACK">Author Name:
+                            <?php echo $row["author_name"] ?></p>
+                            <img src="<?php echo $author_new_folder; ?><?php echo $row['author_image']; ?>" alt="<?php echo $row["author_name"]; ?>" height="200" width="360"><br>
+                            <?php echo $row["author_image"] ?><br>
+                            <img src="<?php echo $image_new_folder; ?><?php echo $row['image_name']; ?>" alt="<?php echo $row["image_name"]; ?>" height="300" width="480"><br> 
+                            <p style="color: BLACK">Story:
+                            <?php echo $row["story"] ?></p><br> 
+                            <hr style="height:1px;border:none;color:#333;background-color:#33e;" />
+                  <?php }
+                    }
+
+                ?>
+                        
+                    </div>
+                 </div>
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br><br><br><br><br><br><br><br><br>
+             
             </div>
+           
         </div>
     </section>
 
-   
-
-    
  <section id="contact">
         <div class="container">
             <div class="row">
