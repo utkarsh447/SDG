@@ -11,6 +11,10 @@
 
     <title>SDG Society</title>
 
+
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -31,7 +35,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
     <style type="text/css">
 
         .logo{
@@ -84,19 +87,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="about.php">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="action.html">Action</a>
+                        <a class="page-scroll" href="action.php">Action</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="campaign.html">Campaign</a>
+                        <a class="page-scroll" href="campaign.php">Campaign</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="getinvolved.html">Get Involved</a>
+                        <a class="page-scroll" href="getinvolved.php">Get Involved</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">The SDG Times</a>
+                        <a class="page-scroll" href="sdgtimes.php">The SDG Times</a>
                     </li>
                     <li>
                      <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;text-decoration: none;">Support Us</a></button>
@@ -108,28 +111,216 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-        
     <!--Team Section-->
   <section id="team">
         <div class="container">
             <div class="row">
                 <!--div class="col-lg-12 text-left"-->
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                  <ul style="list-style: none">
                     <h2 class="section-heading">Our Team</h2>
                    
-                    <li style="font-size: 25px"><a href="advisor.php">Advisors</a></li>
+                   <li style="font-size: 25px"><a href="advisor.php">Advisors</a></li>
                     <li style="font-size: 25px"><a href="mentor.php">Mentors</a></li>
                     <li style="font-size: 25px"><a href="ourteam.php">Executive</a></li>
                     <li style="font-size: 25px"><a href="interns.php">Interns</a></li>
                     <li style="font-size: 25px"><a href="volunteers.php">Campaigners</a></li>
-                    <li style="font-size: 25px"><a href="carrer.php">Career Progression Cycle</a></li>
-                    
+                    <li style="font-size: 25px"><a href="carrer.php">Career-Progression Cycle</a></li>
+
                     </ul>
                 </div>
-                <div class="col-sm-8">
-                    <h1 style="color: #C70039"><center>Coming Soon</center></h1>
-                </div>
+                <div class="col-sm-9">
+
+                    <ul class="ch-grid">
+                          <li>
+                            <div class="ch-item ch-img-1">
+                              <div class="ch-info">
+                                <h3>Aakriti Sharma</h3>
+                                <p>KNC, Delhi University<!-- <a href="http://drbl.in/eODP">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-2">
+                              <div class="ch-info">
+                                <h3>Akanksha Varma</h3>
+                                <p>Shiv Nadar University <!-- <a href="http://drbl.in/eNXW">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-3">
+                              <div class="ch-info">
+                                <h3>Akankshya Rath</h3>
+                                <p>University of Delhi <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-4">
+                              <div class="ch-info">
+                                <h3>Dhiresh</h3>
+                                <p> <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-5">
+                              <div class="ch-info">
+                                <h3>Diya Singh</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-6">
+                              <div class="ch-info">
+                                <h3>Gaurav Patil</h3>
+                                <p>IIT Madras <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-7">
+                              <div class="ch-info">
+                                <h3>Gauri Bansal</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-8">
+                              <div class="ch-info">
+                                <h3>Ishita Misra</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eODP">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-9">
+                              <div class="ch-info">
+                                <h3>Karishma Kharbanda</h3>
+                                <p> <!-- <a href="http://drbl.in/eNXW">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-10">
+                              <div class="ch-info">
+                                <h3>Kartikeya Bhatotia</h3>
+                                <p>SSCBS, Delhi University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-11">
+                              <div class="ch-info">
+                                <h3>Megha Mittal</h3>
+                                <p>DCAC, University of Delhi <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-12">
+                              <div class="ch-info">
+                                <h3>Pauline Mathew</h3>
+                                <p>IIT Madras <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-13">
+                              <div class="ch-info">
+                                <h3>Prateek Sharma</h3>
+                                <p>Indraprastha University  <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-14">
+                              <div class="ch-info">
+                                <h3>Sadaf Bandeali</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ch-item ch-img-15">
+                              <div class="ch-info">
+                                <h3>Safia Aslam</h3>
+                                <p>LSR, Delhi University  <!-- <a href="http://drbl.in/eODP">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-16">
+                              <div class="ch-info">
+                                <h3>Saumya Kalia</h3>
+                                <p>SGTBKC, Delhi University  <!-- <a href="http://drbl.in/eNXW">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-17">
+                              <div class="ch-info">
+                                <h3>Sharada Priya</h3>
+                                <p>IIT Madras <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-18">
+                              <div class="ch-info">
+                                <h3>Shubhangi Poddar</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-19">
+                              <div class="ch-info">
+                                <h3>Swathi S Babu</h3>
+                                <p>IIT Madras  <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-20">
+                              <div class="ch-info">
+                                <h3>Vidur Suri</h3>
+                                <p>Ashoka University <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="ch-item ch-img-21">
+                              <div class="ch-info">
+                                <h3>Vritika Goyal</h3>
+                                <p>Ashoka University  <!-- <a href="http://drbl.in/eNXY">View on Dribbble</a> --></p>
+                              </div>
+                            </div>
+                          </li>
+                   </ul>
+               </div> 
             </div>
         </div>
     </section>
@@ -231,7 +422,6 @@
             </div>
         </div>
     </footer> 
-  
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

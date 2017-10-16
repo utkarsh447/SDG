@@ -81,20 +81,20 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                   <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                    <li>
+                        <a class="page-scroll" href="about.php">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="action.html">Action</a>
+                        <a class="page-scroll" href="action.php">Action</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="campaign.html">Campaign</a>
+                        <a class="page-scroll" href="campaign.php">Campaign</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="getinvolved.html">Get Involved</a>
+                        <a class="page-scroll" href="getinvolved.php">Get Involved</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">The SDG Times</a>
+                        <a class="page-scroll" href="sdgtimes.php">The SDG Times</a>
                     </li>
                     <li>
                      <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;text-decoration: none;">Support Us</a></button>
@@ -108,39 +108,47 @@
     </nav>
   
 
-
     <!-- what we do Section -->
     <section id="whatwedo">
         <div class="container">
-
             <div class="row">
-<!--                 <div class="text-right">
-                    <A HREF="allposts.php" >
-                        WHY NOT WORKING????
-                    </A>
-                    <a href="#allposts">Map</a>
-                </div> -->
                 <div class="col-lg-12 text-center">
-                <br><br><br><br><BR><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <?php 
+                    $sql = "SELECT *,SUBSTRING_INDEX(  `story` ,  ' ', 3 ) from blog ORDER BY id desc";            
 
-       
-                <div class="col-lg-9">
-                    <?php 
-                        $id=$_POST['id'];
-                        echo "string";
-                        echo $id;
-               
-                        $sql = "SELECT * FROM  `blog` WHERE id = '".$id."'";            
+                    $result=display($sql);
 
-                        $result=display($sql);
+                    //$nextid[10000]
+                    if($result->num_rows > 0)
+                    {
+                        while($row = $result->fetch_assoc())
+                        {?>
+                            <form name="submitForm" method="POST" action="seestory.php">
+                                <input type="hidden" name="id" value="<?php echo $row["id"] ?>" style="color: BLACK">
+                                <A HREF="javascript:document.submitForm.submit()" >
+                                <p style="color: BLACK" id = "id" value = "id1">Title:
+                                <?php echo $row["title"] ?></p></A>
+                            </form>
+                            <?php echo $row["id"] ?>
+                            <p style="color: BLACK">Name:
+                            <?php echo $row["name"] ?></p>
+                            <p style="color: BLACK">Author Name:
+                            <?php echo $row["author_name"] ?></p>
+                            <img src="<?php echo $row['author_folder']; ?><?php echo $row['author_image']; ?>" alt="<?php echo $row["author_name"]; ?>" height="200" width="360"><br>
+                            <?php echo $row["author_image"] ?><br>
+                            <img src="<?php echo $row['image_folder']; ?><?php echo $row['image_name']; ?>" alt="<?php echo $row["image_name"]; ?>" height="300" width="480"><br> 
+                            <p style="color: BLACK">Story:
+                            <?php echo $row["story"] ?></p><br> 
+                            <hr style="height:1px;border:none;color:#333;background-color:#33e;" />
+                  <?php }
+                    }
 
-                        displayresult($result);
-                        
-                    ?>
+                ?>
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br>
-             
+
             </div>
            
         </div>
@@ -240,6 +248,7 @@
             </div>
         </div>
     </footer> 
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 

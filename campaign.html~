@@ -84,19 +84,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="about.php">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="action.html">Action</a>
+                        <a class="page-scroll" href="action.php">Action</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="campaign.html">Campaign</a>
+                        <a class="page-scroll" href="campaign.php">Campaign</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="getinvolved.html">Get Involved</a>
+                        <a class="page-scroll" href="getinvolved.php">Get Involved</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">The SDG Times</a>
+                        <a class="page-scroll" href="sdgtimes.php">The SDG Times</a>
                     </li>
                     <li>
                      <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;text-decoration: none;">Support Us</a></button>
@@ -108,35 +108,212 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-        
-    <!--Team Section-->
-  <section id="team">
+
+    <!-- Header -->
+
+     <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Our Studio!</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a href="#services" class="page-scroll btn btn-xl">Host a session</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    
+
+ <section id="portfolio" >
         <div class="container">
             <div class="row">
-                <!--div class="col-lg-12 text-left"-->
-                <div class="col-sm-4">
-                 <ul style="list-style: none">
-                    <h2 class="section-heading">Our Team</h2>
-                   
-                    <li style="font-size: 25px"><a href="advisor.php">Advisors</a></li>
-                    <li style="font-size: 25px"><a href="mentor.php">Mentors</a></li>
-                    <li style="font-size: 25px"><a href="ourteam.php">Executive</a></li>
-                    <li style="font-size: 25px"><a href="interns.php">Interns</a></li>
-                    <li style="font-size: 25px"><a href="volunteers.php">Campaigners</a></li>
-                    <li style="font-size: 25px"><a href="carrer.php">Career Progression Cycle</a></li>
-                    
-                    </ul>
+               <!--Heading-->
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                    <div class="image">
+                        <img src="img/become/b5.png" class="img-responsive" alt="">
+                        <h2 style="position: absolute;top: 30px; left: 0; width: 100%; text-align: center;"><span style="font-size: 80px">30</span><br /><br><span style="font-size: 30px">Institutions<br> </span><span style="font-size: 20px">(Schools & colleges)</span></h2>
+                    </div>
                 </div>
-                <div class="col-sm-8">
-                    <h1 style="color: #C70039"><center>Coming Soon</center></h1>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                    <div class="image">
+                        <img src="img/become/b.jpg" class="img-responsive" alt="">
+                        <h2 style="position: absolute;top: 30px; left: 0; width: 100%; text-align: center;"><span style="font-size: 80px">50</span><br /><br><span style="font-size: 30px">Sessions </span><br><span style="font-size: 20px"> (workshops & training)</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                     <div class="image">
+                        <img src="img/become/b3.png" class="img-responsive" alt="">
+                         <h2 style="position: absolute;top: 30px; left: 0; width: 100%; text-align: center;"><span style="font-size: 80px">12k</span><br><br><span style="font-size: 30px">Youths</span> <br><span style="font-size: 20px">(Participated & trained)</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                   <div class="image">
+                        <img src="img/become/b4.jpg" class="img-responsive" alt="">
+                        <h2 style="position: absolute;top: 30px; left: 20px; width: 100%; text-align: left;">
+                        <span style="background: rgba(0, 0, 0, 0.7);">100</span><span>Individual Actions</span><br>
+                        <span style="background: rgba(0, 0, 0, 0.7);">20</span><span>Team Actions</span><br>
+                        <span style="background: rgba(0, 0, 0, 0.7);">5</span><span>Campus SDG society</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span style="background: rgba(0, 0, 0, 0.7);">75</span><span>SDG campaigners</span><br></h2>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
 
-    
+    <!--campaign section-->
+     <section id="workshop">
+        <div class="container">
+            <div class="row">
+                <!--div class="col-lg-12 text-left"-->
+                <div class="col-sm-4">
+                    <h2 class="section-heading" style="font-size: 50px; color: #40E0D0">Host a workshop</h2>
+                </div>
+                <div class="col-sm-8">
+                    <h3 class="section-subheading text-muted" style="color: #fff" >Welcome! You are about to bring SDG Society to your school. Be the Change you want to see. Feel you should be the class, rather than just sitting at your home and reading this? You can be the one, who spread the flame of SDGs in schools across your neighborhood </h3>
+                        <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;">Apply</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;">Detailed Description</a></button>
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- who we are Section -->
+    <section id="galler"y>
+                   <div ">
+                     <h1><center>Gallery</center></h1>
+                  </div>
+                  <br><br>
+            <div class="w3-row-padding w3-margin-top">
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g1.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>5 Terre</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g2.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Monterosso</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g3.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Vernazza</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-margin-top">
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g4.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Manarola</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g5.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Corniglia</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-third">
+                <div class="w3-card-2">
+                  <img src="img/gallery/g6.jpg" style="width:100%">
+                  <div class="w3-container">
+                    <h5>Riomaggiore</h5>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+    </section>
+
+     <!--SDG section-->
+    <section id="resource">
+        <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                    <h2 class="section-heading" style="font-size: 50px; color: #40E0D0">Resources</h2>
+               </div>
+                 <div class="col-sm-8">
+                   <div class="w3-row-padding">
+                        <div class="col-sm-3" class="w3-third">
+                          <img src="img/booklet/book1.jpg" style="width:100%"><br>
+                         <a href=""> <p style="font-size: 18px">Harry Potter and the Curse child</p></a>
+                        </div>
+
+                        <div class="col-sm-3" class="w3-third">
+                          <img src="img/booklet/book2.jpg" style="width:100%"><br>
+                          <a href=""> <p style="font-size: 18px">Harry Potter and the Deadthly Hallows</p></a>  
+                        </div>
+
+                        <div class="col-sm-3" class="w3-third">
+                          <img src="img/booklet/book3.jpg" style="width:100%"><br>
+                          <a href=""> <p style="font-size: 18px">Harry Potter and the Sorceres stone</p></a>
+                        </div>
+
+                        <div class="col-sm-3" class="w3-third">
+                          <img src="img/booklet/book1.jpg" style="width:100%"><br>
+                         <a href="">  <p style="font-size: 18px">Harry Potter and the Curse child</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+       <!-- Donate Section -->
+    <section id="donate">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h2 class="section-subheading text-center">Help us and make our work grow bigger!</h2>
+                    <center><p class="large text-muted">Giving is not just about making a donation. It is about making a difference</p></center>
+                    <h2 class="section-heading text-center" style="font-size: 60px; color: #40E0D0">Support our work</h2>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">You can support us and contribute your part in helping us fight this battle against ignorance to make this world a better place to live in.</p>
+                </div>
+            </div>
+              <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+                        <button type="submit" class="btn btn-xl" style="background-color:#40E0D0;border-color:#40E0D0;"><a href="#" style="color:#fff;text-decoration: none;">Read more</a></button>
+             </div>
+        </div>
+    </section>
+
+
  <section id="contact">
         <div class="container">
             <div class="row">
@@ -231,7 +408,6 @@
             </div>
         </div>
     </footer> 
-  
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
